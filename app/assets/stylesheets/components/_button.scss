@@ -1,0 +1,97 @@
+.btn-navbar{
+  border: solid 1px $light-gray;
+  border-radius: 20px;
+  color: $light-gray;
+  &:hover{
+    transition: color 0.5s ease;
+    color: $white;
+    border: solid 1px $white;
+  }
+}
+
+
+.btn-invoice{
+  padding: 9px 18px;
+  margin-bottom: 20px;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 1px $gray-light;
+  border-radius: 10px;
+  cursor: pointer;
+  color: $brand-color;
+  background-color: whitesmoke;
+  &:hover{
+    background-color: $lightpurple;
+    transition: color 0.5s ease;
+    border: 1px solid $lightpurple;
+    color: $brand-color;
+  }
+  a:hover{
+    text-decoration:none
+  }
+}
+
+.btn-invoice-dark{
+  padding: 9px 18px;
+  margin-bottom: 20px;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 1px $gray-light;
+  border-radius: 10px;
+  cursor: pointer;
+  color: $brand-color;
+  background-color: whitesmoke;
+  &:hover{
+    background-color: $lightpurple;
+    transition: color 0.5s ease;
+    border: 1px solid $lightpurple;
+    color: $brand-color;
+  }
+}
+
+.btn-flashy{
+  padding: 9px 18px;
+  margin-bottom: 20px;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 1px $gray-light;
+  border-radius: 10px;
+  cursor: pointer;
+  color: $brand-color;
+  background-color: $cta-color;
+  &:hover{
+    background-color: $lightpurple;
+    transition: color 0.5s ease;
+    border: 1px solid $lightpurple;
+    color: $brand-color;
+  }
+}
+
+
+
+.googleplus{
+  &:hover{
+    opacity: 0.9;
+  }
+}
+.googleplus img{
+  height: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+// .googleplus{
+//   display: flex;
+//   background-color: #dd4b39;
+//   color: white;
+//   padding: 9px 21px;
+//   border-radius: 2px;
+//   display: inline-block;
+//   margin-bottom: 20px;
+//   &:hover{
+//     text-decoration: none;
+//     color: white;
+//     background-color: #e74b37;
+//   }
+// }
+// .googleplus img {
+//   height: 22px;
+//   margin: -5px -4px;
+// }

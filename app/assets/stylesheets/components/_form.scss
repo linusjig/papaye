@@ -1,0 +1,69 @@
+
+#invoice_descriptions_attributes_0_vat_tax{
+  width: 55px;
+  margin-right: 30px;
+}
+
+
+.simple_form label {
+  color: grey;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#new_invoice input {
+  border: none;
+
+}
+
+.simple_form div.input {
+  margin-bottom: 15px;
+  clear: both; /* Required for Webkit, but not for Gecko */
+}
+
+.parsley-errors-list {
+  font-size: 7px;
+  color: #D6BBDF;
+}
+
+/* ------------------------------------------------------------------------------- */
+.form-wrapper{
+
+}
+
+.form-group {
+  border-bottom: lightgray dotted;
+  border-width: 0.5px;
+}
+
+.freelancer-info{
+  font-size: 10px;
+  padding: 15px;
+  font-weight: lighter;
+  border: lightgray dotted;
+  border-width: 0.5px;
+  padding-bottom: 6px;
+  margin: 15px;
+ }
+
+ .freelancer-info-email{
+  color: #D6BBDF;
+  font-size: 10px;
+ }
+
+.desc-button {
+  height: 10px;
+  width: 10px;
+
+  &:hover{
+    color: #D6BBDF;
+  }
+}
+
+.nested-fields i {
+  margin-top: 32px;
+}
+
+.total-fields {
+  margin-top: 15px;
+}

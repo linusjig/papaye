@@ -1,0 +1,145 @@
+  h1{
+  color: #463b65;
+  font-weight: bold;
+  margin: 40px 0px;
+}
+
+.banner {
+  background: center no-repeat;
+  background-size: cover !important;
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-shadow: 1px 5px 30px $grape;
+  h {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  }
+  h1 {
+    color: $white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  h2 {
+    font-weight: 100;
+    opacity: 0.7;
+    font-size: 26px;
+  }
+  h3 {
+    color: $white;
+    font-family: $base-font;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+  }
+  a {
+   text-decoration: none;
+ }
+}
+.banner .banner-content .tutorial {
+  margin: 30px 0;
+  a {
+    margin-top: 15px;
+  }
+}
+
+
+
+.card {
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $brand-color;
+  height: 250px;
+  box-shadow: 2px 2px 3px 0px rgb(225,225,225);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-weight: 100;
+    opacity: 0.7;
+  }
+}
+.tree-box-margin{
+  margin: 80px 10px;
+  background-image: linear-gradient(-225deg, $brand-color 40%,  rgba(14, 0, 61, 0.08) 40%);
+  h1{
+    margin: 0px;
+  }
+}
+.two-box-margin{
+  color: #463b65;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 10px 30px 10px;
+  h3{
+    margin-top: 0px;
+  }
+}
+.one-box-margin{
+  margin: 50px 10px 80px 10px;
+  background-image:  linear-gradient(-145deg, $brand-color 20%,  rgba(14, 0, 61, 0.08) 40%);
+  .cta{
+    margin-top: 30px;
+  }
+}
+
+.home-img{
+  height:250px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px lightgrey;
+  margin-top: 40px;
+}
+
+#why-wrapper{
+  padding: 20px;
+  background-color: $white-purple;
+  box-shadow: 7px 2px 15px lightgray;
+}
+
+#stevejobs{
+  margin-left: 13px;
+}
+.why-text{
+    padding: 100px;
+    box-shadow: 1px 1px 1px lightgray;
+    background-color: #e0dede;
+}
+.behind-papaye{
+    padding: 20px 70px 70px 70px;
+    box-shadow: 1px 1px 1px lightgray;
+    background-color: #e0dede;
+    height: 500px;
+    img{
+    width: 350px;
+    padding-bottom: 20px;
+    border-radius: 11px;
+    }
+    h3{
+      color: $brand-color;
+    }
+    p{
+      color: $brand-color;
+      opacity: 0.9;
+    }
+}
+
+#steps{
+  color:white;
+}

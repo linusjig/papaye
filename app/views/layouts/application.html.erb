@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Papaye - Beta</title>
+  <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body>
+  <!-- If navbar is set to top we display the one on top -->
+  <% if user_signed_in? %>
+  <!-- navbar = left -->
+
+        <%= render 'shared/sidebar' %>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-sm-2 col-lg-2">
+      </div> -->
+      <div class="col-sm-10 col-sm-offset-2 col-lg-10">
+
+        <%= render 'shared/welcome' %>
+        <div class="dashboard-wrapper">
+          <%= render 'shared/flashes' %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- if it goes through devise controller: this will happen -->
+  <% elsif devise_controller? %>
+  <%= render 'shared/flashes' %>
+  <%= render 'shared/loginbanner' %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
+        <div class="gray-wrapper">
+           <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <%= render 'shared/footer' %>
+<!-- any other case, home page for example -->
+  <% else %>
+  <%= render 'shared/flashes' %>
+  <%= render 'shared/navbar' %>
+  <%= yield %>
+  <%= render 'shared/footer' %>
+  <% end %>
+  <%= javascript_include_tag 'application' %>
+  <%= yield(:after_js) %>
+
+  <%= render 'shared/analytics' %>
+</body>
+
+</html>
