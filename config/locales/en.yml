@@ -32,21 +32,33 @@ en:
   btn-create-invoice: 'Create Invoice'
   home:
     banner-title: "Don't worry about a thing"
+    banner-undertitle: "Freelancers can authorise their clients credit card and charge them when their mission is finished"
     banner-box1-h: 'Create and send your invoice'
-    banner-box1-p: 'Client and freelancer agree to terms through the invoice'
+    banner-box1-p: 'Client and freelance agent agree to terms through the invoice'
     banner-box2-h: 'Secure the payment'
-    banner-box2-p: 'Start to work when your client has authorized his credit card details'
+    banner-box2-p: 'Start to work when your client has authorized his/ her credit card details'
     banner-box3-h: 'Finish your project and get paid'
-    banner-box3-p: 'Money gets release has soon as you finish your mission'
+    banner-box3-p: 'Money gets released as soon as you finish your mission'
     banner-card-title: 'Wait but why?'
     banner-card1-h: 'You said, late?'
     banner-card1-p: 'Ever had a client paying late ?... At Papaye we think you should focus on what you do best.'
     banner-card2-h: 'Just one more thing...'
-    banner-card2-p: 'Your project never really finishes and your client has one more thing he would like you to do before he can send the payment?'
+    banner-card2-p: 'Your project never really finishes and your client has one more thing he/ she would like you to do before sending the payment?'
     banner-description-h: 'Build trust'
-    banner-description-p1: 'Our service allow you to capture your client credit card info'
-    banner-description-p2: 'and charge him only when you finish the mission.'
+    banner-description-p1: "Our service allow you to capture your client's credit card info"
+    banner-description-p2: 'and charge him/ her only when you finish the mission.'
     banner-description-btn: 'Send your first invoice with Papaye'
+    more: "More about Papaye"
+    pricing: "It's free"
+    pricing-description: "Papaye it an online web app entirely free :)."
+    open-source: "It's open source and you are welcome to contribute on"
+    stripe: "Connect with Stripe"
+    stripe-info: "our service allow you to connect with Stripe. Their fee is 1.4% + 0.25€ for european cards and 2.9% + 0.25€ for Non-european."
+    team: "The team"
+    team-members: "Joâo, Lina and Sydney met in Lisbonne in July 2016 at"
+    wagon: "a french coding bootcamp."
+    team-description: "All three of them gathered together with the drive to help freelancers stop worrying about their invoices."
+
   invoice:
     index:
       hello: "Hi there"
