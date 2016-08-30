@@ -1,7 +1,7 @@
 class FreelancersController < ApplicationController
   before_action :set_freelancer, only: [:edit, :update, :destroy]
 
-  # Disalloww client to edit freelancer
+  # Disallow client to edit freelancer
   before_action :desauthorize_client, only:[:edit]
 
 
@@ -11,7 +11,7 @@ class FreelancersController < ApplicationController
   def update
     respond_to do |format|
       if @freelancer.update(freelancer_params)
-        format.html { redirect_to @freelancer, notice: 'Welcome Freelancer! You have been updated.' }
+        format.html { redirect_to @freelancer, notice: 'Welcome! Your profile has been updated.' }
         format.json { render :show, status: :ok, location: @freelancer }
       else
         format.html { render :edit }

@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
   has_one :freelancer, dependent: :destroy
   has_one :client, dependent: :destroy
-  after_create :my_create_association, unless: proc { |u| u.client } # unless :is_client # add if statement for client
+  after_create :my_create_association, unless: proc { |u| u.client } # Don't create a freelancer if user is client
 
   def self.invite_client!(attributes={}, invited_by=nil, options={})
     Invoice.find(options[:invoice_id]).log_activity :sent

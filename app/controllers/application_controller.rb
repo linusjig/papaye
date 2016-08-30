@@ -9,6 +9,14 @@ class ApplicationController < ActionController::Base
 
   after_action :set_navbar
 
+  def after_sign_in_path_for(resource_or_scope)
+    if resource.sign_in_count == 1 and current_user.freelancer
+       edit_freelancer_path(current_user.freelancer)
+    else
+       root_path
+    end
+end
+
   def set_navbar
     @navbar ||= :left
   end

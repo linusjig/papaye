@@ -4,7 +4,7 @@ class InvoicesController < ApplicationController
 
   # TODO show the freelancer the dashboard (/) rootpath when logged-in (see routes)
   def index
-    # redirect client to s/he's own dahsboard
+    # Redirect client to s/he's own dahsboard
     redirect_to client_invoices_path and return if current_user.client
     @invoices = Invoice.freelance_invoices(current_user)
     @activities = PublicActivity::Activity.where(owner: current_user).order(created_at: 'desc')
@@ -130,7 +130,7 @@ class InvoicesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def invoice_params
-    # to set params, think about nested forms (need description and client attributes!)
+    # To set params, think about nested forms (need description and client attributes!)
     params.require(:invoice).permit(:invoice_date, :due_date, :invoice_nr, :invoice_terms, :project_description, descriptions_attributes: [:description, :amount, :unit, :vat_tax, :price, :id, :_destroy])
   end
 
